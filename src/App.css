@@ -1,0 +1,110 @@
+body{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.container-rick{
+  background-image: url('../public/img/Rick.jpg');
+  background-size: cover;
+  width: 1200px;
+  height: 500px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+}
+
+input{
+  width: 92.5%;
+  border-radius: 5px;
+  border: none;
+}
+
+button{
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.container-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 1200px
+}
+
+.container-location{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 500px;
+  border: 2px solid green;
+  box-shadow:  3px 3px 3px 3px green;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+
+.container-location:hover{
+  transform: translateY(-0.5em);
+}
+
+.info-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 200px;
+}
+
+b{
+  display: flex;
+  margin-left: auto;
+  color: rgb(3, 170, 3);
+}
+
+span{
+  color: rgb(3, 170, 3);
+}
+
+img{
+  width: 200px;
+  border-radius: 10px;
+}
+
+small > b{
+  display: flex;
+  position: absolute;
+  margin-top: 20px;
+  color: rgb(66, 206, 11);
+  font-size: large;
+  background-color: rgba(128, 128, 128, 0.87);
+  border-radius: 5px;
+  width: max-content;
+}
+
+.status-Alive{
+  color: green;
+}
+
+.status-Dead{
+  color: red;
+}
+
+.status-unknown{
+  color: black;
+}
